@@ -1,9 +1,10 @@
 SAGEMAKER_TRAIN_CONFIG_PATH=models/gradient_boost/envs/sagemaker/configs/train-gpu.json
 SAGEMAKER_DEPLOY_CONFIG_PATH=models/gradient_boost/envs/sagemaker/configs/deploy.json
-TRAIN_PARAM_PATH=models/gradient_boost/training_params.json
+TRAIN_PARAM_PATH=models/gradient_boost/training_params_quick_run.json
 TRAIN_PATH=dataset/train.h5
 VAL_PATH=dataset/val.h5
 TEST_PATH=dataset/test.h5
+DATASET_PATH=raw_dataset
 
 clean:
 	-rm -r -f build
@@ -23,7 +24,7 @@ typecheck:
 
 split_dataset:
 	mkdir -p dataset
-	python ./ml_ids/data/split_dataset.py \
+	python ml_ids/data/split_dataset.py \
 		--dataset-path $(DATASET_PATH) \
 		--output-path dataset \
 		--random-seed 42

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/rahul/development/ml-ids/mlruns/0/e95f23671e0f4e338bdb76abdb36f9e0/artifacts
+end_time: 1657133633825
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: e95f23671e0f4e338bdb76abdb36f9e0
+run_uuid: e95f23671e0f4e338bdb76abdb36f9e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1657132231038
+status: 4
+tags: []
+user_id: rahul
